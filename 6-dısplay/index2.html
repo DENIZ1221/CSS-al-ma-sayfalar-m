@@ -1,0 +1,47 @@
+<!--
+    block width değeri alabilir
+    inline width,height ve margin değeri almıyor değeri alamaz
+    margin ve paddingde top ve bottom çalışmıyor diğreleri çalışıo
+    block etikerti hepsini alabiliyor
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        margin: 0;
+       }
+        .block1{
+            background-color: red;
+        }
+        .block2{
+           background-color: green;
+            width: 500px;
+            height: 100px;
+        }
+        .inline1{
+            background-color: yellow;
+            width: 800px;
+            height: 250px;
+        
+        }
+        .inline2{
+            background-color: red;
+           
+
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="block1">block1</div>
+    <div class="block2">bkock2</div>
+    <span class="inline1">inline1</span>
+    <span class="inline2">inline2</span>
+</body>
+</html>

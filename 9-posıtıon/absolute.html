@@ -1,0 +1,58 @@
+<!--absolute da bir kutuyo yana kaydırdıpımızda
+diğer alttaki kutu hemen onun yerini dolduruyo yukarı çıkıyr
+ama relativeda böle bişi yok
+absoluteda container içinden çıkmamamk için 
+containera relative veririz böylecebox llar kontainer iç
+indne çıkmaz 
+absolute her zmana atasına bakar
+relative da container içine relative koymmaıza gerek yok.
+z index lere değer vererek en yüksek değer
+kaplar alanı -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 500px;
+        height: 500px;
+        background-color: gray;
+        position: relative;
+      }
+      .box1 {
+        width: 100px;
+        height: 100px;
+        background-color: hotpink;
+        
+      }
+      .box2 {
+        width: 100px;
+        height: 100px;
+        background-color: khaki;
+        position: absolute;/*kutu 2 ye absolute verdik box 3 yutulup box 2 ye geldi */
+        left: 50px;/*kutu 3ü gçstermek için kutu2 yi çektik*/
+        /*bottom: 0;/*burada kutu ile border arsaı 0 lanıyor*/
+        z-index: 1;
+        
+      }
+      .box3 {
+        width: 100px;
+        height: 100px;
+        background-color: lightgreen;
+        position: relative;/*z index kullanmak için position olmalı*/
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">kutu1</div>
+      <div class="box2">kutu2</div>
+      <div class="box3">kutu3</div>
+    </div>
+  </body>
+</html>

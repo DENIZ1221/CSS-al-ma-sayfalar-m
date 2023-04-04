@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    html{
+        font-size: 16px;
+    }
+    .box{
+        font-size: 20px;
+    }
+    .box p{
+        font-size: 1.5em;
+        margin-top: 2em;/*burada 20px e göre em almaz em de
+        p kendi ilk baştaki px ine göre değr verir yani diyelimki
+        p ilk 30 px ve 30 px alcaktır. 2 emse 60px olur
+        ve em de margin ve padding kullanmak sıkkıntı*/
+    }
+    .box span{/*remler direk html e göre font size alıryani
+        html de font size 16 px se 1 rem 16 pxdir ve sabittir
+        margin ve paddingde en mantıklı*/
+        font-size: 2rem;
+        margin-top: 2rem;
+        display: inline-block;
+    }
+
+    </style>
+    
+</head>
+<body><!--burada box ın içindeki p fontu kendi contaınerına bağlıdır em de.20*1.5px
+eğer container da font sıze yoksa üste doğru çıkar eğer vermemişsek body e göre ordada yoksa htmle göre alır -->
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, eius.</p>
+        <span>Lorem, ipsum dolor.</span>
+    </div>
+</body>
+</html>

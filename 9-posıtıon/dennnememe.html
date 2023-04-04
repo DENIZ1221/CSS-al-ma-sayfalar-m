@@ -1,0 +1,52 @@
+
+<!--
+    burda relativi en aşşağı indiremye çalıştığımda
+    yani bottom 0 rıght 0 dediğimde gitmesi
+    yani relativede sıfırlanmıyor ama absoluteda
+    direk sıfıralyabildim benim anladığım relative yakın mesafe
+    absolute uzak mesafeler için ideal
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+            position: relative;
+
+        }
+        .naber{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            position: relative;
+           left: 100px;
+           bottom: 0px;/*realtivede  0 lanmıyor*/
+            
+           
+        }
+        .naber2{
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+         <div class="naber">naber</div>
+         <div class="naber2">usat</div>
+         <div style="padding-bottom: 2000px;"></div>
+    </div>
+</body>
+</html>

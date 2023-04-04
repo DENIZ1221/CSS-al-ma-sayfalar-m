@@ -1,0 +1,46 @@
+<!--
+ Margin sadece inline-block ve block da kullanılır.
+ padding içerden boşluk margin dışardan boşluk verir
+
+
+
+-->
+
+
+<style>
+    .c{
+        background-color: red;
+        width:100px;
+        height: 40px;
+        margin-left: 10px;
+        border: none;
+    }
+    .a{
+        background-color: blue;
+        width: 100px;
+        padding-top: 10px;
+        height: 40px;
+        margin-top: 50px;
+        margin-right: 100px;
+        vertical-align: top;
+        /*
+        vertical align top dediğimiz zaman
+        diğer 2 box bizi tkip etmicek tek box2
+        gidecek aşağı
+        */
+       
+    }
+    .n{
+        background-color:pink ;
+       
+        margin-left: 10px;
+        padding: 20px;
+    }
+    button{
+        color: white;
+    }
+</style>
+
+<button class="c">KAYDOL</button>
+<button class="a">KATIL</button>
+<button class="n">PAYLAŞ</button>

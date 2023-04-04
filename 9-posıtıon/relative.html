@@ -1,0 +1,55 @@
+<!--BURADA NE YAPTIK RELATİVE
+BURADA RELATİVE KULANDIK DİYELİM BOX2 Yİ BİZ 
+BOX 1 E ÇIKARTMAK İSTİYOTUZ AMA ÇIKARTITEKN BOX 3 ÜN GELMESİNİ
+İSTEMİYORUZ BU YÜZDEN POSİTİON RELATİVE KULLANIRIZ
+TOP=-X ŞEKLİNDE YAZDIĞIMZIDA YUKARI DOĞRU ÇIKIYOR
+ZİNDEX İSE 1 OLDUĞUNDA BASKIN OLUR YANİ DİYELİM
+BOX3 BOX1 E ÇIKIYOR VE BOX 1 İ KAPLIYOR
+BOZ 1 GÖZÜKMÜYOR BOX1İN ZİNDEXİNE 1 YAPARSAK BOX
+GÖZÜLÜR.
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+      }
+      #kutu1 {
+        background-color: red;
+        z-index: 1;
+        position: relative ;
+      }
+      #kutu2 {
+        background-color: blue;
+        position: relative;
+        top: -50px;
+      }
+      #kutu3 {
+        background-color: yellowgreen;
+      }
+      .wrapper{
+        border: 1px solid black;
+        width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box" id="kutu1">kutu1</div>
+      <div class="box" id="kutu2">kutu2</div>
+      <div class="box" id="kutu3">kutu3</div>
+    </div>
+  </body>
+</html>

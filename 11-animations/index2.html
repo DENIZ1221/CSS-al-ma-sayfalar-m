@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;/*başlangıçtan bitişe kadar geçen süre*/
+}
+
+@keyframes example {
+  0%   {background-color: red;}/* animasyon %0 tamamlandığında*/
+  25%  {background-color: yellow;}/* animasyon %25 tamamlandığında*/
+  50%  {background-color: blue;}/* animasyon %50 tamamlandığında*/
+  100% {background-color: green;}/* animasyon %100 tamamlandığında*/
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<div></div>
+
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+</body>
+</html>

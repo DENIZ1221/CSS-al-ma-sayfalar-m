@@ -1,0 +1,152 @@
+<!--Justıfy contentler yatay hizalama yapar
+Align itemsler dikery hizalama yapar.-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <div style="display: flex; margin-top: 20px">
+      <div style="background: red; flex: 1">kutu1</div>
+      <div style="background: turquoise; flex: 1">kutu2</div>
+      <div style="background: orange; flex: 1">kutu3</div>
+      <div style="background: rgb(70, 47, 4); width: 50px">kutu3</div>
+      <!--flex özelliği aynı fr gibi 
+        flexler kuruların yanyana gelmesini sağlıyor gridde tempalte gerekirekn
+        flex de heemn ynayana getiriyor display  ile
+        display felx direk yanaya getirio ancak grid de yapmıyot
+      
+      -->
+    </div>
+    <div style="display: flex; margin-top: 20px">
+      <div style="background: red; flex: 1">kutu1</div>
+      <div style="background: turquoise; flex: 2">kutu2</div>
+      <div style="background: orange; flex: 3">kutu3</div>
+      <div style="background: rgb(70, 47, 4); width: 50px">kutu3</div>
+      <!--flex 3 en fazla yer kapalar sonra 2 sonra 1 
+      
+      -->
+    </div>
+    <div
+      style="
+        display: flex;
+        margin-top: 20px;
+        column-gap: 10px;
+        border: 1px solid black;
+      "
+    >
+      <div style="background: red">kutu1</div>
+      <div style="background: turquoise">kutu2</div>
+      <div style="background: orange">kutu3</div>
+      <!--flex 3 en fazla yer kapalar sonra 2 sonra 1 
+      
+      -->
+    </div>
+
+    <h2 style="margin-top: 20px">justify-content: space-between;</h2>
+    <div
+      style="
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+        border: 1px solid black;
+      "
+    >
+      <div style="background: red">kutu1</div>
+      <div style="background: turquoise">kutu2</div>
+      <div style="background: orange">kutu3</div>
+      <!--felx özeelliği justify-content
+        betweende en sol ve sağ sabit oratay bir kutu-->
+    </div>
+
+    <b style="display: inline-block; margin-top: 20px"
+      >justify-content:space-around</b
+    >
+    <div
+      style="
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-around;
+        border: 1px solid black;
+      "
+    >
+      <div style="background: red">kutu1</div>
+      <div style="background: turquoise">kutu2</div>
+      <div style="background: orange">kutu3</div>
+      <!-- en sol ve en sağ kutudakiler zıt yönde ilerliyor boşluklar eşit-->
+    </div>
+
+    <h2 style="margin-top: 20px">justify-content:space-evenly</h2>
+    <div
+      style="
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-evenly;
+        border: 1px solid black;
+      "
+    >
+      <div style="background: red">kutu1</div>
+      <div style="background: turquoise">kutu2</div>
+      <div style="background: orange">kutu3</div>
+      <!--bura her kutunun yanının width değerleri eşit-->
+    </div>
+    <br />
+    --------------------------------align
+    İtems--------------------------------------------------------
+    <h2 style="margin-top: 20px">align items:flex-start</h2>
+    <div
+      style="
+        display: flex;
+        margin-top: 20px;
+        align-items: flex-start;
+        border: 1px solid black;
+        height: 300px;
+      "
+    >
+      <div style="background: red">kutu1</div>
+      <div style="background: turquoise">kutu2</div>
+      <div style="background: orange">kutu3</div>
+      <!--heightına 300px verince diğerleride heıght 300px oluyor kutuların
+      bu yüzden align items:flex-start sadece kapsayıcı heıght alır deiğerlerinin armtsını engeller-->
+    </div>
+    -----------------------------------
+    <h2 style="margin-top: 20px">align items:center</h2>
+    <div
+      style="
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+        border: 1px solid black;
+        height: 300px;
+      "
+    >
+      <div style="background: red">kutu1</div>
+      <div style="background: turquoise">kutu2</div>
+      <div style="background: orange">kutu3</div>
+      <!--heightına 300px verince diğerleride heıght 300px oluyor kutuların
+      bu yüzden align items:flex-start sadece kapsayıcı heıght alır deiğerlerinin armtsını engeller-->
+    </div>
+
+    <h2 style="margin-top: 20px">align items:end</h2>
+    <div
+      style="
+        display: flex;
+        margin-top: 20px;
+        align-items: end;
+        border: 1px solid black;
+        height: 300px;
+      "
+    >
+      <div style="background: red; flex: 1">kutu1</div>
+      <div style="background: turquoise; flex: 1">kutu2</div>
+      <div style="background: orange; flex: 1">kutu3</div>
+      <!--heightına 300px verince diğerleride heıght 300px oluyor kutuların
+      bu yüzden align items:flex-start sadece kapsayıcı heıght alır deiğerlerinin armtsını engeller-->
+    </div>
+  </body>
+</html>

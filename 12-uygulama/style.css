@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,300&family=Roboto:wght@100&display=swap');
+
+*{/*tüm elemenetlerimiz iseçer*/
+    
+    margin: 0;
+    padding: 0;
+}
+
+body{/*tüm html kodun arkaplan rengini yaptık*/
+    background: #0f0f0f;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    display: flex;
+    
+    
+   
+}
+/*! header start*/
+header{
+    border-bottom: 1px solid gray;
+    height: 60px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 40px;/*0 yukardan aşşağıdan 20 sağdan soldan boşluk*/
+    position: fixed;
+    background-color: black;
+    z-index: 1;
+    width: 100%;
+   
+}
+.header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    height: 60px;
+}
+.header-left{
+    display: flex;
+    align-items: center;/*her ihtimale karşı yindede verdik*/
+
+}
+header i{/*header etiketi içindeki i ler 20 px olsun*/
+    font-size: 20px;
+   color: white;
+}
+.header-left h3{/*left in içindeki h3*/
+    font-size:24px;
+    color: #ff0000;
+    margin-left: 20px;
+    
+}
+.header-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+.header-search input{
+   background-color: #0f0f0f;
+   border: none;
+   outline: none;/*tıkladığımzıda dışardaki çizgileri istemzsek outlıne none*/
+   align-items: center;
+   
+}
+.header-search{
+    border: 1px solid #f1f1f1;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    margin-right: 12px;
+}
+.header-search .bi-search{
+    font-size: 18px;
+   margin-right: 4px;
+    cursor: pointer;
+}
+.header-center .bi-mic{
+    background-color: #342a28;
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+   
+}
+.header-right{
+    display: flex;
+    column-gap: 10px;/*flexlerde satır aralığını açıyoruz*/
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    
+  
+}
+.header-right .avatar{
+    width: 32px;
+    height: 32px;
+}
+.header-right .avatar img{
+     width: 100%;
+     border-radius: 100%;
+     
+}
+.content{
+    display: flex;
+    margin-top: 60px;
+}
+ /*! header-end*/ 
+ .sidebar{
+    height: 100vh;/*bir browser 750px 1bh 7.5 px değerinde*/
+    border-right: 1px solid #717171 ;
+    width: 120px;     
+    padding-top: 10px;
+    position: fixed;
+    z-index: 15;
+    background-color: black;
+    
+ }
+ .sidebar-item{
+    margin-top: 15px;
+    
+ }
+ 
+.sidebar-item a{
+    display: flex;/*anasayfa ve ıconu kapsanayna flex verdik*/
+    flex-direction: column;/*alt alta atmak için*/ 
+    align-items: center;/*yatayda orta hiza*/
+    padding-top:20px;/*en üstteki anasayfa 20 px boşuk bırak*/
+    text-decoration: none;
+    color: white;
+    transition: .5s  all;/*transitton hover all hoverdkileri all yerine color yazsak rengi deiştirir tek*/
+   
+}
+
+.sidebar i{
+    font: size 20px; ;
+}
+
+.sidebar-item a span{
+    font-size: 12px;
+    margin-top: 10px;
+    
+    
+}
+ 
+.sidebar-item a:hover{
+    color: red;
+    background-color: gray;
+    border-radius: 20px;
+}
+.sidebar-item span{
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/*! video başlangıç*/
+
+.videos{
+   margin: 20px;
+   flex: 1;
+   margin-left: 140px;
+}
+
+
+.video-list{
+    color: white;
+    list-style: none;/*bir nokta çıtı onu sildik*/
+    display: grid; /*buna flex dersek yanayana sıralanır*/
+    grid-template-columns: 1fr 1fr 1fr 1fr ;/*burada 4 tane sütün yan yana olacak eğer 3 tane olsa 3 tanesi yanyan a diğeri aşşağı
+    grid-template-column:repeat(4,1fr)*/
+    gap: 15px;
+}
+.video-image{
+    position: relative;
+    display: flex;
+    
+}
+.video-image img{
+    width: 100%;
+}
+.video-image span{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: gray;
+    font-size: 12px;
+    padding: 4px;
+}
+.video-texts{
+    display: flex;
+    flex-direction: column;/*yazıları alt alta getirdik*/
+    margin-top: 4px;
+    row-gap: 6px;/*satır aralığı verdik 2 a etiketine*/
+}
+.video-texts a{
+    color: white;/*a etiketlerini beyaz yaptık*/
+    text-decoration: none;
+    font-weight: bold;/*a etiketlerini biraz daha kalın yaptı*/
+}
+.video-texts span{
+    font-size: 12px;
+}
+
+

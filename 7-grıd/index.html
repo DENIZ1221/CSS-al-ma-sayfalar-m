@@ -1,0 +1,103 @@
+<!--GRİD SAYAFAYI YATAY VE DİKEY OLARAK SÜTUNLARA AYIRIR
+gridie birden falza kutu olursa kapayıcı olmalı
+unutma grid ve margin değerlerini kapsayıcıya veririz ii çine değil-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="kapsayici" style="
+    display: grid;
+    grid-template-columns:100px 100px 100px; 
+    ">
+    <!--satırda kaç tane px varsa o satırda o akdar box vardır
+    diyelim bir tane 100px var ama 3 tane kutumuz var o zmana aşağı sıralnır
+2 tane px dğeri olup 3 tane kutu varsa satırda 2 box olur diğeri aşşağıda-->
+      <div style="background: red">kutu1</div>
+      <div style="background: yellow">kutu2</div>
+      <div style="background: orange;">kutu3</div>
+      <div style="background: turquoise;">kutu4</div>
+      <div style="background: black;"></div>
+    </div>
+
+    <div class="kapsayici" style="
+    display: grid;
+    grid-template-columns:100px 100px 1fr; 
+    margin-top: 50px;
+    ">
+    <!--satırda kaç tane px varsa o satırda o akdar box vardır
+    diyelim bir tane 100px var ama 3 tane kutumuz var o zmana aşağı sıralnır
+2 tane px dğeri olup 3 tane kutu varsa satırda 2 box olur diğeri aşşağıda
+1fr olsa 100px 100px 1fr sağ tarafa kadar her yeri kaplar
+ama hepsi 1fr 1fr 1fr olsa ortak olarak böler genişliği
+-->
+      <div style="background: red">kutu1</div>
+      <div style="background: yellow">kutu2</div>
+      <div style="background: orange;">kutu3</div>
+      <div style="background: turquoise;">kutu4</div>
+    </div>
+
+    <div class="kapsayici" style="
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr; 
+    margin-top: 50px;
+    column-gap: 10px;
+    row-gap: 10px;
+    
+
+    ">
+    <!--satırda kaç tane px varsa o satırda o akdar box vardır
+    diyelim bir tane 100px var ama 3 tane kutumuz var o zmana aşağı sıralnır
+2 tane px dğeri olup 3 tane kutu varsa satırda 2 box olur diğeri aşşağıda
+1fr olsa 100px 100px 1fr sağ tarafa kadar her yeri kaplar
+ama hepsi 1fr 1fr 1fr olsa ortak olarak böler genişliği
+column-gap ile sütun aralarını açarız
+row-gap ile satır arlarını açarız.
+-->
+      <div style="background: red; height:200px;">kutu1</div>
+      <div style="background: yellow;height: 200px;">kutu2</div>
+      <div style="background: orange;height: 200px;">kutu3</div>
+      <div style="background: black; height:200px;">kutu1</div>
+      <div style="background: green;height: 200px;">kutu2</div>
+      <div style="background: greenyellow;height: 200px;">kutu3</div>
+
+    </div>
+
+    
+    
+    
+    <div class="kapsayici" style="
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr; 
+   
+    margin-top: 50px;
+    gap: 28px;
+    margin-left: 20px;
+   
+    
+
+    ">
+    <!--satırda kaç tane px varsa o satırda o akdar box vardır
+    diyelim bir tane 100px var ama 3 tane kutumuz var o zmana aşağı sıralnır
+2 tane px dğeri olup 3 tane kutu varsa satırda 2 box olur diğeri aşşağıda
+1fr olsa 100px 100px 1fr sağ tarafa kadar her yeri kaplar
+ama hepsi 1fr 1fr 1fr olsa ortak olarak böler genişliği
+gap:burada hem satır hem sütün aralığını çamamız sağlar.
+display grid tek başına yanyana getirmezngrid teplate ile gelir
+ama felx te dispaly flex diyerek yan yana getirebiliriz
+-->
+      <div style="background: red; height:200px;">kutu1</div>
+      <div style="background: yellow;height: 200px;">kutu2</div>
+      <div style="background: orange;height: 200px;">kutu3</div>
+      <div style="background: black; height:200px;">kutu1</div>
+      <div style="background: green;height: 200px;">kutu2</div>
+      <div style="background: greenyellow;height: 200px;">kutu3</div>
+
+    </div>
+  </body>
+</html>

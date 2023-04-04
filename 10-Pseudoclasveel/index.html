@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        
+        .pseudo p:first-child{
+            color: red;
+        }
+        .pseudo p:last-child{
+            color: blue;
+        }
+        .show-button button{
+            display: none;
+        }
+        .show-button:hover button{
+            display: inline-block;
+        }
+       
+    .links a:link{/*linkimin başlangıç rengi*/
+        color: blue;
+    }
+    .links a:visited{/*a etiketi ziyaret edildikten sonra sayfay geri dönüşte rengi kırmızı olsun*/
+        color: red;
+    } 
+    .links a:hover{
+        color: black;
+    }
+    .links a:active{/*linkin üzerine basılı tutarken*/
+        color: green;
+    }
+    .pseudo p:first-child::first-letter{
+        font-size: 40px;
+        color: black;
+    }
+    /* .pseudo p::firstletter firstletter ilk harf{*/
+        .pseudo p::first-line{/*ilk satır sadece*/
+            background-color: blanchedalmond;
+        }
+        .pseudo p:last-child::before{
+            content: "***";/*burada before dersek yıldız
+            ilk başa gelir after p bittikten sonra hemen yanına gelir*/
+        }
+        ::selection{/*istediğimiz satırı 2 kere tıkalyıp yana doğru istediğimizik opyalamak istediğimizde bunu kullanırız nasıl renk istersek*/
+            color: blueviolet;
+            background-color: yellow;
+        }
+    </style>
+    
+    
+    <!--! Pseudo Classes -->
+    <div class="links">
+        
+        <a href="home.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+        
+       <div class="show-button">
+        search 
+        <button>click me</button>
+       </div>
+
+   <div class="pseudo">
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+   </div>
+    <!--!pseud0 classlar tek iki nokta :
+      pseudo elementler ise :: iki tane iki nokta
+      
+      ul+p{ ul den sonra hemen gelen  ilk p ye ulaş
+
+      }
+    
+    
+    -->
+    
+
+
+
+
+
+</body>
+</html>

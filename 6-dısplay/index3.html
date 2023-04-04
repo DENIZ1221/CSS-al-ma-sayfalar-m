@@ -1,0 +1,61 @@
+<!--
+    block width değeri alabilir
+    inline width,height ve margin değeri almıyor değeri alamaz
+    margin ve paddingde top ve bottom çalışmıyor diğreleri çalışıo
+    block etikerti hepsini alabiliyor
+    visibility:hiddem;
+    bu dispaly none yaptığımızda yerini diğerleri alıyor
+    bu yüzden almamsını sitersek hiddn kullanırız
+    kısacası yer kaplamaya devam etsşin ama gözükmesin
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        margin: 0;
+       }
+        .block1{
+            background-color: red;
+        }
+        .block2{
+           background-color: green;
+            width: 500px;
+            height: 100px;
+        }
+        .inline{
+            background-color: yellow;
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+            /*
+            burda inline elementi
+            hem yanayana hemde block gibi
+            width ve height verebilme özellii verdik.
+            */
+            
+        }
+        .sus{
+            background-color: red;
+            width: 300px;
+            
+        }
+        .sus:hover{/*.sus un üzerine gelindiğinde*/
+            display: none;/*burada üzerine geşdiğimzide yok oluyor*/
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="block1">block1</div>
+    <div class="block2">bkock2</div>
+    <span class="inline">inline1</span>
+    <span class="inline">inline2</span>
+    <div class="sus">usta2</div>
+</body>
+</html>
